@@ -1,0 +1,118 @@
+カード #0
+	名前: alsa_card.usb-RME_Fireface_UFX__23697719__8572DA459BE0AC8-00
+	ドライバー: module-alsa-card.c
+	モジュール: 6
+	プロパティ:
+		alsa.card = "1"
+		alsa.card_name = "Fireface UFX (23697719)"
+		alsa.long_card_name = "RME Fireface UFX (23697719) at usb-0000:00:14.0-4, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "pci-0000:00:14.0-usb-0:4:1.0"
+		sysfs.path = "/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/sound/card1"
+		udev.id = "usb-RME_Fireface_UFX__23697719__8572DA459BE0AC8-00"
+		device.bus = "usb"
+		device.vendor.id = "0424"
+		device.vendor.name = "Standard Microsystems Corp."
+		device.product.id = "3fb8"
+		device.product.name = "Fireface UFX (23697719)"
+		device.serial = "RME_Fireface_UFX__23697719__8572DA459BE0AC8"
+		device.string = "1"
+		device.description = "Fireface UFX (23697719)"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	プロフィール:
+		input:multichannel-input: Multichannel 入力 (sinks: 0, sources: 1, priority: 1, available: yes)
+		output:analog-stereo: アナログステレオ 出力 (sinks: 1, sources: 0, priority: 6000, available: yes)
+		output:analog-stereo+input:multichannel-input: アナログステレオ 出力 + Multichannel 入力 (sinks: 1, sources: 1, priority: 6001, available: yes)
+		output:iec958-stereo: デジタルステレオ (IEC958) 出力 (sinks: 1, sources: 0, priority: 5500, available: yes)
+		output:iec958-stereo+input:multichannel-input: デジタルステレオ (IEC958) 出力 + Multichannel 入力 (sinks: 1, sources: 1, priority: 5501, available: yes)
+		off: オフ (sinks: 0, sources: 0, priority: 0, available: yes)
+	有効なプロフィール: output:iec958-stereo+input:multichannel-input
+	ポート:
+		multichannel-input: Multichannel Input (priority: 0, latency offset: 0 usec)
+			プロファイルのパーツ: input:multichannel-input, output:analog-stereo+input:multichannel-input, output:iec958-stereo+input:multichannel-input
+		analog-output: アナログ出力 (priority: 9900, latency offset: 0 usec)
+			プロファイルのパーツ: output:analog-stereo, output:analog-stereo+input:multichannel-input
+		iec958-stereo-output: デジタル出力 (S/PDIF) (priority: 0, latency offset: 0 usec)
+			プロファイルのパーツ: output:iec958-stereo, output:iec958-stereo+input:multichannel-input
+
+カード #1
+	名前: alsa_card.pci-0000_00_1b.0
+	ドライバー: module-alsa-card.c
+	モジュール: 7
+	プロパティ:
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel PCH"
+		alsa.long_card_name = "HDA Intel PCH at 0xf7c10000 irq 36"
+		alsa.driver_name = "snd_hda_intel"
+		device.bus_path = "pci-0000:00:1b.0"
+		sysfs.path = "/devices/pci0000:00/0000:00:1b.0/sound/card0"
+		device.bus = "pci"
+		device.vendor.id = "8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "1e20"
+		device.product.name = "7 Series/C210 Series Chipset Family High Definition Audio Controller"
+		device.form_factor = "internal"
+		device.string = "0"
+		device.description = "内部オーディオ"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-pci"
+	プロフィール:
+		input:analog-stereo: アナログステレオ 入力 (sinks: 0, sources: 1, priority: 60, available: yes)
+		output:analog-stereo: アナログステレオ 出力 (sinks: 1, sources: 0, priority: 6000, available: yes)
+		output:analog-stereo+input:analog-stereo: アナログステレオ入出力 (sinks: 1, sources: 1, priority: 6060, available: yes)
+		output:analog-surround-21: アナログサラウンド 2.1 出力 (sinks: 1, sources: 0, priority: 800, available: yes)
+		output:analog-surround-21+input:analog-stereo: アナログサラウンド 2.1 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 860, available: yes)
+		output:analog-surround-40: アナログサラウンド 4.0 出力 (sinks: 1, sources: 0, priority: 700, available: yes)
+		output:analog-surround-40+input:analog-stereo: アナログサラウンド 4.0 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 760, available: yes)
+		output:analog-surround-41: アナログサラウンド 4.1 出力 (sinks: 1, sources: 0, priority: 800, available: yes)
+		output:analog-surround-41+input:analog-stereo: アナログサラウンド 4.1 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 860, available: yes)
+		output:analog-surround-50: アナログサラウンド 5.0 出力 (sinks: 1, sources: 0, priority: 700, available: yes)
+		output:analog-surround-50+input:analog-stereo: アナログサラウンド 5.0 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 760, available: yes)
+		output:analog-surround-51: アナログサラウンド 5.1 出力 (sinks: 1, sources: 0, priority: 800, available: yes)
+		output:analog-surround-51+input:analog-stereo: アナログサラウンド 5.1 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 860, available: yes)
+		output:analog-surround-71: Analog Surround 7.1 出力 (sinks: 1, sources: 0, priority: 700, available: yes)
+		output:analog-surround-71+input:analog-stereo: Analog Surround 7.1 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 760, available: yes)
+		output:iec958-stereo: デジタルステレオ (IEC958) 出力 (sinks: 1, sources: 0, priority: 5500, available: yes)
+		output:iec958-stereo+input:analog-stereo: デジタルステレオ (IEC958) 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 5560, available: yes)
+		output:hdmi-stereo: Digital Stereo (HDMI) 出力 (sinks: 1, sources: 0, priority: 5400, available: yes)
+		output:hdmi-stereo+input:analog-stereo: Digital Stereo (HDMI) 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 5460, available: yes)
+		output:hdmi-surround: Digital Surround 5.1 (HDMI) 出力 (sinks: 1, sources: 0, priority: 300, available: yes)
+		output:hdmi-surround+input:analog-stereo: Digital Surround 5.1 (HDMI) 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 360, available: yes)
+		output:hdmi-surround71: Digital Surround 7.1 (HDMI) 出力 (sinks: 1, sources: 0, priority: 300, available: yes)
+		output:hdmi-surround71+input:analog-stereo: Digital Surround 7.1 (HDMI) 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 360, available: yes)
+		output:hdmi-stereo-extra1: Digital Stereo (HDMI 2) 出力 (sinks: 1, sources: 0, priority: 5200, available: yes)
+		output:hdmi-stereo-extra1+input:analog-stereo: Digital Stereo (HDMI 2) 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 5260, available: yes)
+		output:hdmi-surround-extra1: Digital Surround 5.1 (HDMI 2) 出力 (sinks: 1, sources: 0, priority: 100, available: yes)
+		output:hdmi-surround-extra1+input:analog-stereo: Digital Surround 5.1 (HDMI 2) 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 160, available: yes)
+		output:hdmi-surround71-extra1: Digital Surround 7.1 (HDMI 2) 出力 (sinks: 1, sources: 0, priority: 100, available: yes)
+		output:hdmi-surround71-extra1+input:analog-stereo: Digital Surround 7.1 (HDMI 2) 出力 + アナログステレオ 入力 (sinks: 1, sources: 1, priority: 160, available: yes)
+		off: オフ (sinks: 0, sources: 0, priority: 0, available: yes)
+	有効なプロフィール: output:iec958-stereo
+	ポート:
+		analog-input-front-mic: フロントマイクロフォン (priority: 8500, latency offset: 0 usec, not available)
+			Properties:
+				device.icon_name = "audio-input-microphone"
+			プロファイルのパーツ: input:analog-stereo, output:analog-stereo+input:analog-stereo, output:analog-surround-21+input:analog-stereo, output:analog-surround-40+input:analog-stereo, output:analog-surround-41+input:analog-stereo, output:analog-surround-50+input:analog-stereo, output:analog-surround-51+input:analog-stereo, output:analog-surround-71+input:analog-stereo, output:iec958-stereo+input:analog-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71+input:analog-stereo, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1+input:analog-stereo
+		analog-input-rear-mic: リアマイクロフォン (priority: 8200, latency offset: 0 usec, not available)
+			Properties:
+				device.icon_name = "audio-input-microphone"
+			プロファイルのパーツ: input:analog-stereo, output:analog-stereo+input:analog-stereo, output:analog-surround-21+input:analog-stereo, output:analog-surround-40+input:analog-stereo, output:analog-surround-41+input:analog-stereo, output:analog-surround-50+input:analog-stereo, output:analog-surround-51+input:analog-stereo, output:analog-surround-71+input:analog-stereo, output:iec958-stereo+input:analog-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71+input:analog-stereo, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1+input:analog-stereo
+		analog-input-linein: ラインイン (priority: 8100, latency offset: 0 usec, not available)
+			プロファイルのパーツ: input:analog-stereo, output:analog-stereo+input:analog-stereo, output:analog-surround-21+input:analog-stereo, output:analog-surround-40+input:analog-stereo, output:analog-surround-41+input:analog-stereo, output:analog-surround-50+input:analog-stereo, output:analog-surround-51+input:analog-stereo, output:analog-surround-71+input:analog-stereo, output:iec958-stereo+input:analog-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71+input:analog-stereo, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1+input:analog-stereo
+		analog-output-lineout: ライン出力 (priority: 9900, latency offset: 0 usec, not available)
+			プロファイルのパーツ: output:analog-stereo, output:analog-stereo+input:analog-stereo, output:analog-surround-21, output:analog-surround-21+input:analog-stereo, output:analog-surround-40, output:analog-surround-40+input:analog-stereo, output:analog-surround-41, output:analog-surround-41+input:analog-stereo, output:analog-surround-50, output:analog-surround-50+input:analog-stereo, output:analog-surround-51, output:analog-surround-51+input:analog-stereo, output:analog-surround-71, output:analog-surround-71+input:analog-stereo
+		analog-output-headphones: アナログヘッドフォン (priority: 9000, latency offset: 0 usec, not available)
+			Properties:
+				device.icon_name = "audio-headphones"
+			プロファイルのパーツ: output:analog-stereo, output:analog-stereo+input:analog-stereo
+		iec958-stereo-output: デジタル出力 (S/PDIF) (priority: 0, latency offset: 0 usec)
+			プロファイルのパーツ: output:iec958-stereo, output:iec958-stereo+input:analog-stereo
+		hdmi-output-0: HDMI / DisplayPort (priority: 5900, latency offset: 0 usec, not available)
+			Properties:
+				device.icon_name = "video-display"
+			プロファイルのパーツ: output:hdmi-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71, output:hdmi-surround71+input:analog-stereo
+		hdmi-output-1: HDMI / DisplayPort 2 (priority: 5800, latency offset: 0 usec, not available)
+			Properties:
+				device.icon_name = "video-display"
+			プロファイルのパーツ: output:hdmi-stereo-extra1, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1, output:hdmi-surround71-extra1+input:analog-stereo
