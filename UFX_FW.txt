@@ -1,0 +1,162 @@
+
+
+FFADO diagnostic utility 2.2.9999
+============================
+(C) 2008 Pieter Palmers
+    2009-2010 Arnold Krille
+
+
+=== CHECK ===
+ Base system...
+  kernel version............ 4.4.0-22-lowlatency
+    Preempt (low latency)... True
+    RT patched.............. False
+  old 1394 stack present.... False
+  old 1394 stack loaded..... False
+  old 1394 stack active..... False
+  new 1394 stack present.... True
+  new 1394 stack loaded..... True
+  new 1394 stack active..... True
+  /dev/raw1394 node present. False
+  /dev/fw* permissions:
+crw-------  1 root root  248, 0  5月 24 13:49 /dev/fw0
+crw-rw----+ 1 root audio 248, 1  5月 24 13:57 /dev/fw1
+  User IDs:
+uid=1000(audiotec) gid=1000(audiotec) groups=1000(audiotec),4(adm),20(dialout),21(fax),24(cdrom),25(floppy),26(tape),27(sudo),29(audio),30(dip),44(video),46(plugdev),104(fuse),107(scanner),109(lpadmin),113(netdev),123(sambashare)
+ Prerequisites (dynamic at run-time)...
+   gcc ............... gcc (Ubuntu 5.3.1-14ubuntu2) 5.3.1 20160413
+   g++ ............... g++ (Ubuntu 5.3.1-14ubuntu2) 5.3.1 20160413
+   PyQt4 (by pyuic4) . sh: 1: pyuic4: not found
+   jackd ............. no message buffer overruns
+     path ............ /usr/bin/jackd
+     flags ........... -ljack
+   libraw1394 ........ 2.1.1
+     flags ........... -lraw1394
+   libavc1394 ........ Package libavc1394 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavc1394.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libavc1394' found
+     flags ........... Package libavc1394 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavc1394.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libavc1394' found
+   libiec61883 ....... 1.2.0
+     flags ........... -liec61883 -lraw1394
+   libxml++-2.6 ...... Package libxml++-2.6 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libxml++-2.6.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libxml++-2.6' found
+     flags ........... Package libxml++-2.6 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libxml++-2.6.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libxml++-2.6' found
+   dbus-1 ............ 1.10.6
+     flags ........... -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -ldbus-1
+ Prerequisites (static at compile-time)...
+   gcc ............... gcc (Ubuntu 5.3.1-3ubuntu1) 5.3.1 20151207
+   g++ ............... g++ (Ubuntu 5.3.1-3ubuntu1) 5.3.1 20151207
+   PyQt4 (by pyuic4) . Python User Interface Compiler 4.11.4 for Qt version 4.8.6
+   jackd ............. sh: 1: jackd: not found
+     path ............ 
+     flags ........... Package jack was not found in the pkg-config search path.
+   libraw1394 ........ 2.1.1
+     flags ........... -lraw1394
+   libavc1394 ........ Package libavc1394 was not found in the pkg-config search path.
+     flags ........... Package libavc1394 was not found in the pkg-config search path.
+   libiec61883 ....... 1.2.0
+     flags ........... -liec61883 -lraw1394
+   libxml++-2.6 ...... 2.40.1
+     flags ........... -std=c++11 -I/usr/include/libxml++-2.6 -I/usr/lib/x86_64-linux-gnu/libxml++-2.6/include -I/usr/include/libxml2 -I/usr/include/glibmm-2.4 -I/usr/lib/x86_64-linux-gnu/glibmm-2.4/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/sigc++-2.0 -I/usr/lib/x86_64-linux-gnu/sigc++-2.0/include -lxml++-2.6 -lxml2 -lglibmm-2.4 -lgobject-2.0 -lglib-2.0 -lsigc-2.0
+   dbus-1 ............ 1.10.6
+     flags ........... -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -ldbus-1
+ uname -a...
+   Linux ustudio.local 4.4.0-22-lowlatency #40-Ubuntu SMP PREEMPT Thu May 12 22:54:03 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+ Hardware...
+   Host controllers:
+04:00.0 FireWire (IEEE 1394) [0c00]: Texas Instruments XIO2213A/B/XIO2221 IEEE-1394b OHCI Controller [Cheetah Express] [104c:823f] (rev 01) (prog-if 10 [OHCI])
+	Subsystem: Texas Instruments XIO2213A/B/XIO2221 IEEE-1394b OHCI Controller [Cheetah Express] [104c:823f]
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (500ns min, 1000ns max), Cache Line Size: 32 bytes
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at f7804000 (32-bit, non-prefetchable) [size=2K]
+	Region 1: Memory at f7800000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: firewire_ohci
+	Kernel modules: firewire_ohci
+
+   CPU info:
+Architecture:          x86_64
+CPU 操作モード:   32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+コアあたりのスレッド数:2
+ソケットあたりのコア数:2
+Socket(s):             1
+NUMA ノード数:     1
+ベンダー ID:       GenuineIntel
+CPU ファミリー:   6
+モデル:             58
+Model name:            Intel(R) Core(TM) i3-3220T CPU @ 2.80GHz
+ステッピング:    9
+CPU MHz:               2799.890
+CPU max MHz:           2800.0000
+CPU min MHz:           1600.0000
+BogoMIPS:              5769.00
+仮想化:             VT-x
+L1d キャッシュ:   32K
+L1i キャッシュ:   32K
+L2 キャッシュ:    256K
+L3 キャッシュ:    3072K
+NUMA node0 CPU(s):     0-3
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx f16c lahf_lm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm arat pln pts
+ Configuration...
+  IRQ information
+Hardware Interrupts:
+--------------------
+ IRQ    0: PID:  None, count:      [29, 0, 0, 0], Sched None (priority None), drivers: ['2-edge      timer']
+ IRQ    1: PID:  None, count:       [1, 0, 1, 0], Sched None (priority None), drivers: ['1-edge      i8042']
+ IRQ    4: PID:  None, count:       [2, 0, 2, 0], Sched None (priority None), drivers: ['4-edge']
+ IRQ    8: PID:  None, count:       [1, 0, 0, 0], Sched None (priority None), drivers: ['8-edge      rtc0']
+ IRQ    9: PID:  None, count:       [3, 0, 0, 0], Sched None (priority None), drivers: ['9-fasteoi   acpi']
+ IRQ   12: PID:  None, count:       [1, 0, 3, 0], Sched None (priority None), drivers: ['12-edge      i8042']
+ IRQ   16: PID:  None, count:      [0, 1, 39, 0], Sched None (priority None), drivers: ['16-fasteoi   firewire_ohci']
+ IRQ   23: PID:  None, count: [45, 44, 3938, 349], Sched None (priority None), drivers: ['23-fasteoi   ehci_hcd:usb1', 'ehci_hcd:usb2']
+ IRQ   25: PID:  None, count:       [0, 0, 0, 0], Sched None (priority None), drivers: ['327680-edge      xhci_hcd']
+ IRQ   26: PID:  None, count:       [0, 0, 0, 0], Sched None (priority None), drivers: ['3145728-edge      xhci_hcd']
+ IRQ   27: PID:  None, count:       [0, 0, 0, 0], Sched None (priority None), drivers: ['3145729-edge      xhci_hcd']
+ IRQ   28: PID:  None, count:       [0, 0, 0, 0], Sched None (priority None), drivers: ['3145730-edge      xhci_hcd']
+ IRQ   29: PID:  None, count:       [0, 0, 0, 0], Sched None (priority None), drivers: ['3145731-edge      xhci_hcd']
+ IRQ   30: PID:  None, count:       [0, 0, 0, 0], Sched None (priority None), drivers: ['3145732-edge      xhci_hcd']
+ IRQ   31: PID:  None, count: [55, 12, 57, 9095], Sched None (priority None), drivers: ['2621440-edge      eth0']
+ IRQ   32: PID:  None, count: [10494, 1419, 16139, 2377], Sched None (priority None), drivers: ['512000-edge      0000:00:1f']
+ IRQ   33: PID:  None, count:       [0, 0, 0, 0], Sched None (priority None), drivers: ['3670016-edge      0000:07:00']
+ IRQ   34: PID:  None, count: [218, 1270, 196, 52], Sched None (priority None), drivers: ['32768-edge      i915']
+ IRQ   35: PID:  None, count:      [13, 0, 0, 0], Sched None (priority None), drivers: ['360448-edge      mei_me']
+ IRQ   36: PID:  None, count: [1231, 56, 418, 115], Sched None (priority None), drivers: ['442368-edge      snd_hda_intel']
+
+Software Interrupts:
+--------------------
+
+
+=== REPORT ===
+FireWire kernel drivers:
+
+The new FireWire kernel stack is loaded. 
+If running a kernel earlier than 2.6.37 and problems are experienced, either 
+try with the old Firewire kernel stack or upgrade to a newer kernel 
+(preferrably 2.6.37 or later).
+
+########################################
+-----------------------------------------------
+FFADO test and diagnostic utility
+Part of the FFADO project -- www.ffado.org
+Version: 2.2.9999-
+(C) 2008, Daniel Wagner, Pieter Palmers
+This program comes with ABSOLUTELY NO WARRANTY.
+-----------------------------------------------
+
+=== 1394 PORT 0 ===
+  Node id  GUID                  VendorId     ModelId   Vendor - Model
+   0       0x000a350219776923  0x00000A35  0x00101800   RME - unknown
